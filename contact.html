@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anca's Beauty Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="background">
+        <h1>Anca's Beauty Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutME.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="beauty-image background beauty-text">
+        <main>
+                <form action="message.php" method="POST" style="max-width:500px;margin:auto">
+                    <div class="input-container">
+                      <i class="fa fa-user fa-lg fa-fw icon"></i>
+                      <input class="input-field" type="text" placeholder="Name (necessary)" name="usrnm">
+                    </div>
+                  
+                    <div class="input-container">
+                      <i class="fa fa-envelope icon"></i>
+                      <input class="input-field" type="text" placeholder="Email (necessary)" name="email">
+                    </div>
+                    
+                    <div class="input-container">
+                      <i class="fas fa-align-left fa-lg fa-fw icon"></i>
+                      <input class="input-field" type="text" placeholder="Subject" name="sub">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fas fa-comment fa-lg fa-fw icon"></i>
+                        <input class="input-field" type="text" placeholder="Message" name="msj">
+                    </div>
+                  
+                    <button type="submit" class="btn">Send</button>
+                
+                </form>
+                <form action="login.html" style="max-width:500px;margin:auto">
+                    <button type="submit" class="btn">Login</button>
+                </form>
+        </main>
+    </div>
+</body>
+</html>

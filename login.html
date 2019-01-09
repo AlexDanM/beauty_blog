@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anca's Beauty Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="background">
+        <h1>Anca's Beauty Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutME.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="beauty-image background"></div>
+        <main>
+            <div class="loginbox">
+                <img src="images/avatar.png" class="avatar">
+                    <h1>Login Here</h1>
+                        <form>
+                            <p><strong>Username</strong></p>
+                            <input type="text" name="username" placeholder="Enter Username">
+                            <p><strong>Password</strong></p>
+                            <input type="password" name="password" placeholder="Enter Password">
+                            <input type="submit" onclick="check(this.form)" name="" value="Login"><br>
+                        </form>
+            </div>
+                <script src='https://code.jquery.com/jquery-3.3.1.min.js'> </script>
+                    <script language="javascript">
+                        function check(form)
+                            {
+                                if(form.username.value == "anca" && form.password.value == "123")
+                                {
+                                    window.open('contactMess.php');
+                                }
+                                else
+                                {
+                                    alert("The username and password is inccorect")
+                                }
+                        }
+                    </script>    
+        </main>
+    </div>
+</body>
+</html>
